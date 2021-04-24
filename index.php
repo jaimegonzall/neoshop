@@ -25,9 +25,14 @@ include "templates/header.php";
 <div class="wrapper">
     <div class="slider">
         <!-- TODO: Desarrollar el marcado para el slider -->
+        <?php echo $slider_html; ?>
     </div><!-- .slider -->
     <div class="products">
         <!-- TODO: Desarrollar el marcado para los productos -->
+        <h2>Productos</h2>
+        <?php
+            include "templates/productos.php";
+        ?>
     </div><!-- .products -->
     <div class="load">
         <!-- TODO: BONUS. Desarrollar la funcionalidad para que el botón cargue más productos -->
