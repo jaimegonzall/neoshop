@@ -24,11 +24,13 @@
         </div>
     </div>
 
+    <!-- Flechas del slider -->
     <div class="slider--control">
         <a href="#" class="slider--control--prev" onclick="avanzaSlide(-1)">&#10094;</a>
         <a href="#" class="slider--control--next" onclick="avanzaSlide(1)">&#10095;</a>
     </div>
 
+    <!-- Botones inferiores del slider -->
     <div class="slider--puntos">
         <span class="puntos__dot active" onclick="posicionSlide(1)"></span>
         <span class="puntos__dot" onclick="posicionSlide(2)"></span>

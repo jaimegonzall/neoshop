@@ -1,6 +1,3 @@
-console.log("products-controller.js conectado!");
-
-/* document.querySelector('#products').addEventListener('click', traerDatos()); */
 document.querySelector('.load__button').addEventListener('click', traerDatos());
 
 
@@ -18,11 +15,10 @@ function traerDatos(){
             /* console.log(datos); */
             /* console.table(datos['data']); */
             let products = document.querySelector('#products');
-            /* products.innerHTML = ''; */
 
+            /* Bucle para mostrar productos */
             for(let item of datos['data']){
-                console.log(item.name, item.price, item.image, item.button_text);
-                console.log(datos['data'].indexOf(item));
+                /* console.log(item.name, item.price, item.image, item.button_text); */
                 products.innerHTML += `
                 <article class="products__article">
                 <img src="${item.image}" alt="${item.name}">
@@ -31,6 +27,7 @@ function traerDatos(){
                 <span class="products__article--price">${item.price}</span>
                 </article>
                 `
+                /* En ciertos momentos del bucle se imprimen los CTA */
                 if(datos['data'].indexOf(item) == 3){
                     products.innerHTML +=`<figure class="calltoaction cta1">
                     <img src="resources/cta/cta1.jpg" alt="Call to action">
@@ -46,3 +43,4 @@ function traerDatos(){
         }
     }
 }
+
