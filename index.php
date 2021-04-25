@@ -23,19 +23,15 @@ include "templates/header.php";
     </nav>
 </header>
 <main class="wrapper">
-    <section class="slider">
-        <!-- TODO: Desarrollar el marcado para el slider -->
-        <?php
-            include "templates/slider.php";
-        ?>
-    </section><!-- .slider -->
-    <section class="products">
-        <!-- TODO: Desarrollar el marcado para los productos -->
-        <h2>Productos</h2>
-        <?php
-            include "templates/productos.php";
-        ?>
-    </section><!-- .products -->
+
+    <?php
+        include "templates/slider.php";
+    ?>
+
+    <?php
+        include "templates/productos.php";
+    ?>
+
     <div class="load">
         <!-- TODO: BONUS. Desarrollar la funcionalidad para que el botón cargue más productos -->
         <span class="load__button button">Cargar más productos</span>
